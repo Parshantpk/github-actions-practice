@@ -1,0 +1,14 @@
+name: practice
+on: [push]
+jobs:
+  greeting-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "hello world!"
+      - name: greeting javascript action
+        id: greet
+        uses: actions/hello-world-javascript-action@v1.1
+        with:
+          who-to-greet: "Parshant kumar"
+          
